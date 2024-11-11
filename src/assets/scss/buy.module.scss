@@ -1,0 +1,109 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+  .flyingImgView {
+    position: absolute;
+    top: -185px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+      top: -80px;
+    }
+
+    img {
+      width: 850px;
+
+      @media (max-width: 1024px) {
+        width: 360px;
+      }
+    }
+  }
+
+  .buyCursor {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    z-index: 10;
+    position: absolute;
+    top: -10px;
+    right: calc(50% - 272px);
+    transform: translateX(50%);
+
+    @media (max-width: 1024px) {
+      top: 1px;
+      right: calc(50% - 114px);
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .arrowupImgView {
+    margin-top: 40px;
+    width: 1000px;
+    text-align: right;
+    z-index: 2;
+
+    @media (max-width: 1024px) {
+      width: 400px;
+      margin-top: 18px;
+    }
+
+    img {
+      width: 115px;
+      margin-right: 88px;
+
+      @media (max-width: 1024px) {
+        width: 55px;
+        margin-right: 27px;
+      }
+    }
+  }
+
+  .pressImgView {
+    width: 1000px;
+    text-align: right;
+    z-index: 2;
+
+    @media (max-width: 1024px) {
+      width: 400px;
+    }
+
+    img {
+      width: 270px;
+      margin-right: 85px;
+
+      @media (max-width: 1024px) {
+        width: 210px;
+        margin-right: 14px;
+      }
+    }
+  }
+
+  .descImgView {
+    width: 1000px;
+    text-align: right;
+    z-index: 2;
+    margin-top: 40px;
+
+    @media (max-width: 1024px) {
+      width: 400px;
+      margin-top: 10px;
+    }
+
+    img {
+      width: 450px;
+      margin-right: 160px;
+
+      @media (max-width: 1024px) {
+        width: 230px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

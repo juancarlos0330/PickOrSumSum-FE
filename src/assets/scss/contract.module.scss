@@ -1,0 +1,112 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+  .section {
+    margin-top: 50px;
+    margin-left: 238px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      margin-top: 25px;
+      margin-left: 165px;
+      margin-bottom: 30px;
+    }
+
+    .auditimg {
+      width: 290px;
+
+      @media (max-width: 1024px) {
+        width: 162px;
+      }
+    }
+
+    .contracttextimg {
+      width: 267px;
+      margin-top: 37px;
+
+      @media (max-width: 1024px) {
+        width: 145px;
+        margin-top: 12px;
+      }
+    }
+
+    .contractaddressimg {
+      width: 415px;
+      margin-top: 10px;
+
+      @media (max-width: 1024px) {
+        width: 204px;
+        margin-top: 6px;
+      }
+    }
+
+    .emailtextimg {
+      width: 220px;
+      margin-top: 32px;
+
+      @media (max-width: 1024px) {
+        width: 120px;
+        margin-top: 12px;
+      }
+    }
+
+    .emailaddressimg {
+      width: 290px;
+      margin-top: 20px;
+
+      @media (max-width: 1024px) {
+        width: 150px;
+        margin-top: 8px;
+      }
+    }
+
+    .heartImgView {
+      position: absolute;
+      top: -98px;
+      left: -302px;
+      z-index: 3;
+
+      @media (max-width: 1024px) {
+        top: -100px;
+        left: -150px;
+      }
+
+      img {
+        width: 230px;
+
+        @media (max-width: 1024px) {
+          width: 110px;
+        }
+      }
+    }
+
+    .heartTextImgView {
+      position: absolute;
+      top: -26px;
+      left: -242px;
+      z-index: 3;
+
+      @media (max-width: 1024px) {
+        top: -67px;
+        left: -124px;
+      }
+
+      img {
+        width: 140px;
+
+        @media (max-width: 1024px) {
+          width: 68px;
+        }
+      }
+    }
+  }
+}

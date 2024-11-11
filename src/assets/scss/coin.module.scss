@@ -1,0 +1,123 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+  .powerimg {
+    width: 500px;
+    margin-top: 30px;
+
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+      width: 290px;
+    }
+  }
+
+  .rainbowimg {
+    margin-top: 20px;
+    width: 850px;
+
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+      width: 370px;
+    }
+  }
+
+  .sumcoinimg {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    z-index: 1;
+
+    @media (max-width: 1024px) {
+      width: 202px;
+      top: 119px;
+    }
+  }
+
+  .twitterImgView {
+    position: absolute;
+    top: 395px;
+    left: calc(50% - 321px);
+    transform: translateX(-50%);
+    z-index: 11;
+
+    @media (max-width: 1024px) {
+      top: 192px;
+      left: calc(50% - 147px);
+    }
+
+    img {
+      width: 60px;
+
+      @media (max-width: 1024px) {
+        width: 35px;
+      }
+
+      &:nth-child(1) {
+        display: block;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      img {
+        &:nth-child(1) {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .telegramImgView {
+    position: absolute;
+    top: 365px;
+    left: calc(50% - 225px);
+    transform: translateX(-50%);
+    z-index: 11;
+
+    @media (max-width: 1024px) {
+      top: 181px;
+      left: calc(50% - 100px);
+    }
+
+    img {
+      width: 60px;
+
+      @media (max-width: 1024px) {
+        width: 30px;
+      }
+
+      &:nth-child(1) {
+        display: block;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      img {
+        &:nth-child(1) {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: block;
+        }
+      }
+    }
+  }
+}
